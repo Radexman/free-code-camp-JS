@@ -196,8 +196,58 @@
 
 // Conditionals: Ternary Operator
 
-function getFee(isMember) {
-    return (isMember ? '$2.00' : '$10.00');
-}
+// const number = 50;
+// let result;
 
-console.log(getFee(false));
+// // if (number >= 50) {
+// //     result = 'Not to fifty!';
+// // } else {
+// //     result = 'It could be worse';
+// // }
+
+// // result = number >= 50 ? 'Not to fifty!' : 'It could be worse';
+
+// // if (number === 0) {
+// //     result = 'You have nothing';
+// // } else if (number < 10) {
+// //     result = 'You have very little';
+// // } else {
+// //     result = 'You have a lot';
+// // }
+
+// // console.log(result);
+
+// // ======= Arrow functions ======== //
+
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// let sum2 = (a, b) => a + b;
+
+// function isPositive(number) {
+//     return number >= 0;
+// }
+
+// let isPositive2 = number => number >= 0;
+
+// function randomNumber() {
+//     return Math.floor(Math.random() * 10 + 1);
+// }
+
+// let randomNumber2 = () => Math.floor(Math.random() * 10 + 1);
+
+
+// document.addEventListener('click', function () {
+//     console.log('Click');
+// })
+
+// document.addEventListener('click', () => {
+//     console.log('Click');
+// })
+
+// User Input
+
+// let name = prompt('Please enter your name');
+// console.log(name ??);
+
