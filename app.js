@@ -117,24 +117,87 @@
 
 // console.log(reply);
 
-let testScore = 50;
-let collegeStudent = false;
-let grade;
+// let testScore = 50;
+// let collegeStudent = false;
+// let grade;
 
-if (testScore >= 90) {
-    grade = 'A';
-} else if (testScore >= 80) {
-    grade = 'B';
-} else if (testScore >= 70) {
-    grade = 'C';
-} else if (testScore >= 60) {
-    grade = 'd';
-} else {
-    if (collegeStudent) {
-        grade = 'U';
-    } else {
-        grade = 'F';
-    }
+// if (testScore >= 90) {
+//     grade = 'A';
+// } else if (testScore >= 80) {
+//     grade = 'B';
+// } else if (testScore >= 70) {
+//     grade = 'C';
+// } else if (testScore >= 60) {
+//     grade = 'd';
+// } else {
+//     if (collegeStudent) {
+//         grade = 'U';
+//     } else {
+//         grade = 'F';
+//     }
+// }
+
+// console.log(grade);
+
+// if (playerOne === computer) {
+//     // tie game
+// } else if (playerOne === 'rock') {
+//     if (computer === 'paper') {
+//         // computer wins 
+//     } else {
+//         // playerOne wins
+//     }
+// } else if (playerOne === 'paper') {
+//     if (computer === 'scissors') {
+//         // computer wins 
+//     } else {
+//         // playerOne wins
+//     }
+// } else {
+//     if (computer === 'rock') {
+//         // computer wins 
+//     } else {
+//         // playerOne wins
+//     }
+// }
+
+// let playerOne = 'rock';
+// let computer = 'scissors';
+
+// switch (playerOne) {
+//     case computer:
+//         console.log('Tie game');
+//         break;
+
+//     case 'rock':
+//         if (computer === 'paper') {
+//             console.log('You lost');
+//         } else {
+//             console.log('playerOne wins')
+//         }
+//         break;
+    
+//     case 'paper':
+//         if (computer === 'scissors') {
+//             console.log('You lost');
+//         } else {
+//             console.log('playerOne wins')
+//         }
+//         break;
+
+//     default:
+//         if (computer === 'rock') {
+//             console.log('You lost');
+//         } else {
+//             console.log('playerOne wins')
+//         }
+//         break;
+// }
+
+// Conditionals: Ternary Operator
+
+function getFee(isMember) {
+    return (isMember ? '$2.00' : '$10.00');
 }
 
-console.log(grade);
+console.log(getFee(false));
