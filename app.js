@@ -251,3 +251,98 @@
 // let name = prompt('Please enter your name');
 // console.log(name ??);
 
+// ===== Loops ===== //
+
+// let myNumber = 50;
+// while (myNumber < 50) {
+//     myNumber += 2;
+//     console.log(myNumber);
+// }
+
+// do {
+//     console.log(myNumber);
+// } while (myNumber < 50);
+
+// let anyName = 'Radosław';
+
+// let getRandomChar = name => name.charAt(Math.floor(Math.random() * name.length));
+// console.log(getRandomChar(anyName));
+
+// let height = 10;
+// let width = 5;
+// let depth = 3;
+
+// let getArea = (height, width, depth) => {
+//     let area = width * height;
+//     let volume = width * height * depth;
+//     let areas = [area, volume];
+//     return areas;
+// }
+
+// console.log(getArea(height, width, depth)[0]);
+// console.log(getArea(height, width, depth)[1]);
+
+// function Car(year, speed, brand) {
+//     this.year = year;
+//     this.speed = speed;
+//     this.brand = brand;
+// }
+
+// let bmw = new Car(1999, '600KM', 'BMW');
+
+// console.log(bmw.brand);
+
+// let cars = [
+//     'Ferrari',
+//     'Aston Martin',
+//     'Lamborgini',
+//     'Porshe'
+// ]
+
+// let myFavCar = cars[0];
+
+// let legal = false;
+// let checkLegal = legal ? console.log('This stuff is legal') : console.log('This stuff is illegal');
+
+// let fruits = [
+//     'banana',
+//     'pineapple',
+//     'strawberry',
+//     'orange'
+// ]
+
+// let i = 0;
+// for (i; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+
+// fruits.forEach((fruit) => {
+//     console.log(fruit);
+// })
+
+// let headings = document.querySelectorAll('.hhh');
+// let creator = document.getElementsByClassName('creator');
+
+// let createEl = () => {
+//     let newHeading = document.createElement('h2');
+//     let newTextNode = document.createTextNode('Heading');
+//     newHeading.appendChild(newTextNode);
+//     document.appendChild(newHeading);
+// }
+
+// createEl();
+
+// creator.addEventListener('click' () => {
+// })
+
+// headings.forEach((heading) => {
+//     heading.addEventListener('click', () => {
+//         heading.classList.toggle('active');
+//     })
+// })
+
+// let newEl = document.createElement('h2');
+// let newTextNode = document.newTextNode('New Heading');
+// newEl.appendChild(newTextNode);
+
+// document.appendChild(newEl);

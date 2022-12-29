@@ -25,3 +25,17 @@ main {
 h1 {
     font-size: 250%;
 }
+
+.active {
+    color: red;
+}
+
+p {
+    font-size: 2rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: darkgreen;
+    font-family: sans-serif;
+    margin-block: .3em;
+    padding: .2em;
+}
