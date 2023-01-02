@@ -346,3 +346,50 @@
 // newEl.appendChild(newTextNode);
 
 // document.appendChild(newEl);
+
+// Loops
+
+// let myNumber = 0;
+
+// while (myNumber < 50) {
+//     myNumber += 2;
+//     console.log(myNumber);
+// }
+
+// do {
+//     myNumber += 2;
+//     console.log(myNumber);
+// } while (myNumber < 50);
+
+// let name = 'Radek';
+// for (let i = 0; i < name.length; i++) {
+//     console.log(name.charAt(i));
+// }
+
+// let name = 'Radek';
+// let counter = 0;
+// let myLetter;
+// while (counter <= 3) {
+//     myLetter = name[counter];
+//     console.log(myLetter);
+//     if (counter === 1) {
+//         counter += 2;
+//         continue;
+//     }
+//     if (myLetter === 'd') break;
+//     counter++;
+// }
+
+// ===== Functions ===== //
+
+// const getUserNameFromEmail = (email) => {
+//     return email.slice(0, email.indexOf('@'));
+// }
+
+// console.log(getUserNameFromEmail('Borderlandsmaniak@gmail.com'));
+
+const toProperCase = (name) => {
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+}
+
+console.log(toProperCase('radosław'));
