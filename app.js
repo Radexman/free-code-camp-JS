@@ -388,8 +388,59 @@
 
 // console.log(getUserNameFromEmail('Borderlandsmaniak@gmail.com'));
 
-const toProperCase = (name) => {
-    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-}
+// const toProperName = (name) => {
+//     return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+// }
 
-console.log(toProperCase('radosław'));
+// console.log(toProperName('radosław'));
+
+// ===== Scope ===== //
+
+// var x = 1;
+// let y = 2;
+// const z = 3;
+
+// console.log(`global: ${x}`);
+// console.log(`global: ${y}`);
+// console.log(`global: ${z}`);
+
+// let myFunction = () => {
+//     var x = 10;
+//     let z = 5; 
+//     {
+//         var x = 11; // function scoped
+//         const z = 6; // block scoped
+//         console.log(`block: ${x}`);
+//         console.log(`block: ${y}`);
+//         console.log(`block: ${z}`); 
+//     }
+//     console.log(`function: ${x}`);
+//     console.log(`function: ${y}`);
+//     console.log(`function: ${z}`);
+// }
+
+// myFunction();
+
+// ===== Arrays ===== //
+
+// const myArrayA = ['A', 'B', 'C'];
+// const myArrayB = ['D', 'E', 'F'];
+
+// const newArray = [...myArrayA, ...myArrayB];
+
+// console.log(newArray);
+
+const equipShelfA = ['baseball', 'football', 'volleyball'];
+const equipShelfB = ['basketball', 'golf balls', 'tennis balls'];
+
+const clothesShelfA = ['tank tops', 't-shirts', 'jerseys'];
+const clothesShelfB = ['sweat tops', 'sweat pants', 'hoodies'];
+
+console.log(equipShelfA[1]);
+console.log(clothesShelfB[0]);
+
+const equipDept = [equipShelfA, equipShelfB];
+const clothesDept = [clothesShelfA, clothesShelfB];
+
+console.log(equipDept[0][1]);
+console.log(clothesDept[1][0]);
