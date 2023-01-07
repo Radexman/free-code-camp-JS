@@ -430,17 +430,26 @@
 
 // console.log(newArray);
 
-const equipShelfA = ['baseball', 'football', 'volleyball'];
-const equipShelfB = ['basketball', 'golf balls', 'tennis balls'];
+// const equipShelfA = ['baseball', 'football', 'volleyball'];
+// const equipShelfB = ['basketball', 'golf balls', 'tennis balls'];
 
-const clothesShelfA = ['tank tops', 't-shirts', 'jerseys'];
-const clothesShelfB = ['sweat tops', 'sweat pants', 'hoodies'];
+// const clothesShelfA = ['tank tops', 't-shirts', 'jerseys'];
+// const clothesShelfB = ['sweat tops', 'sweat pants', 'hoodies'];
 
-console.log(equipShelfA[1]);
-console.log(clothesShelfB[0]);
+// console.log(equipShelfA[1]);
+// console.log(clothesShelfB[0]);
 
-const equipDept = [equipShelfA, equipShelfB];
-const clothesDept = [clothesShelfA, clothesShelfB];
+// const equipDept = [equipShelfA, equipShelfB];
+// const clothesDept = [clothesShelfA, clothesShelfB];
 
-console.log(equipDept[0][1]);
-console.log(clothesDept[1][0]);
+// console.log(equipDept[0][1]);
+// console.log(clothesDept[1][0]);
+
+// ===== Objects ===== //
+
+const band = {
+    vocals: 'Robert Plant',
+    guitar: 'Jimmy Page',
+    bass: 'John Paul Jones',
+    drums: 'John Bonham'
+}
