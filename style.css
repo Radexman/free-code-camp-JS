@@ -15,11 +15,12 @@ body {
 }
 
 main {
-    height: 100ch;
+    height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    padding-inline: 4em;
 }
 
 h1 {

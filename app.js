@@ -529,20 +529,51 @@
 // console.log(recieveJSON);
 // console.log(typeof recieveJSON);
 
-'use strict';
-const makeError = () => {
-    try {
-        throw new customError('This a custom error');
-    } catch(err) {
-        console.warn(err.stack);
-        logTheError(err.stack);
-    }
+// 'use strict';
+// const makeError = () => {
+//     try {
+//         throw new customError('This a custom error');
+//     } catch(err) {
+//         console.warn(err.stack);
+//         logTheError(err.stack);
+//     }
+// }
+
+// makeError();
+
+// function customError(message) {
+//     this.message = message;
+//     this.name = 'customError';
+//     this.stack = `${this.name}: ${this.message}`;
+// }
+
+// ===== DOM ===== //
+
+const divs = document.querySelectorAll('div');
+
+for (let i = 0; i < divs.length; i++) {
+    divs[i].style.background = 'darkblue';
 }
 
-makeError();
+const navText = document.querySelector('h1');
+navText.textContent = 'Hello World!';
+const view2 = document.querySelector('.view2');
 
-function customError(message) {
-    this.message = message;
-    this.name = 'customError';
-    this.stack = `${this.name}: ${this.message}`;
+const navbar = document.querySelector('nav');
+
+const createDivs = (parent, iter) => {
+    const newDiv = document.createElement('div');
+    newDiv.textContent = iter;
+    newDiv.style.backgroundColor = '#fff';
+    newDiv.style.width = '100px';
+    newDiv.style.height = '100px';
+    newDiv.style.margin = '10px';
+    newDiv.style.display = 'flex';
+    newDiv.style.justifyContent = 'center';
+    newDiv.style.alignItems = 'center';
+    parent.append(newDiv);
+}
+
+for (let i = 1; i <= 12; i++) {
+    createDivs(view2, i);
 }
