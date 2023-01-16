@@ -447,9 +447,102 @@
 
 // ===== Objects ===== //
 
-const band = {
-    vocals: 'Robert Plant',
-    guitar: 'Jimmy Page',
-    bass: 'John Paul Jones',
-    drums: 'John Bonham'
+// const band = {
+//     vocals: 'Robert Plant',
+//     guitar: 'Jimmy Page',
+//     bass: 'John Paul Jones',
+//     drums: 'John Bonham'
+// }
+
+// delete band.drums;
+// console.log(band.hasOwnProperty('drums'));
+
+// console.log(Object.keys(band));
+// console.log(Object.values(band));
+
+// for (let job in band) {
+//     console.log(`On ${job}, it's ${band[job]}!`);
+// }
+
+// const { vocals, guitar, bass, drums } = band;
+// console.log(vocals);
+// console.log(guitar);
+
+// function sings({ vocals }) { return `${vocals} sings!` };
+// console.log(sings(band));
+
+// ===== JavaScript Classes ===== //
+
+// class Pizza {
+//     crust = 'original';
+//     #sauce = 'traditional';
+//     #size;
+//     constructor(pizzaSize) {
+//         this.#size = pizzaSize;
+//     }
+//     getCrust() {
+//         return this.crust;
+//     }
+//     setCrust(pizzaCrust) {
+//         this.crust = pizzaCrust;
+//     }
+//     hereYouGo() {
+//         console.log(`Here's your ${this.crust} ${this.#sauce} sauce ${this.pizzaSize} pizza.`);
+//     }
+// }
+
+// const myPizza = new Pizza('large');
+// myPizza.hereYouGo();
+// console.log(myPizza.crust);
+
+// class SpecialtyPizza extends Pizza {
+//     constructor(pizzaSize){
+//         super(pizzaSize)
+//         this.type = 'The Works';
+//     }
+//     slice() {
+//         console.log(`Our ${this.type} ${this.size} pizza has 8 slices.`);
+//     }
+// }
+
+// const mySpecialty = new SpecialtyPizza('medium');
+// mySpecialty.slice();
+
+// const myObj = {
+//     name: 'Radek',
+//     hobbies: ['code', 'guitar'],
+//     hello: function() {
+//         console.log(`Hello my name is ${this.name}`);
+//     }
+// };
+
+// console.log(myObj);
+// console.log(myObj.name);
+// myObj.hello();
+// console.log(typeof myObj);
+
+// const sendJSON = JSON.stringify(myObj);
+// console.log(sendJSON);
+// console.log(typeof sendJSON);
+// console.log(sendJSON.name);
+// const recieveJSON = JSON.parse(sendJSON);
+// console.log(recieveJSON);
+// console.log(typeof recieveJSON);
+
+'use strict';
+const makeError = () => {
+    try {
+        throw new customError('This a custom error');
+    } catch(err) {
+        console.warn(err.stack);
+        logTheError(err.stack);
+    }
+}
+
+makeError();
+
+function customError(message) {
+    this.message = message;
+    this.name = 'customError';
+    this.stack = `${this.name}: ${this.message}`;
 }
